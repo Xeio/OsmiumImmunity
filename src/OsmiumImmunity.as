@@ -67,7 +67,7 @@ class OsmiumImmunity
 		{
 			if (buff.m_Name == OSMIUM_NAME || buff.m_BuffId == OSMIUM_ID_GREEN || buff.m_BuffId == OSMIUM_ID_RED)
 			{
-				if (CharacterBase.GetClientCharID().GetInstance() != buff.m_CasterId)
+				if (m_character.GetID().GetInstance() != buff.m_CasterId)
 				{
 					Spell.CancelBuff(buff.m_BuffId, buff.m_CasterId);
 				}
